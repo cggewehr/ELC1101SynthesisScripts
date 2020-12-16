@@ -1,0 +1,4 @@
+database -open VCD_DB -into VCD_FILE.vcd -vcd -default
+probe -create -database VCD_DB -vcd -all -variables -depth all
+run
+exit
