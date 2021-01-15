@@ -16,7 +16,6 @@ exec ncvlog ${DEV_DIR}/${TOP_LVL_ENTITY}.v -vtimescale 1ns/1ps
 
 # Compiles testbench
 puts "Compiling testbench"
-exec ncvhdl -v93 ${PROJECT_DIR}/trunk/frontend/array_pkg.vhd 
 exec ncvhdl -v93 ${PROJECT_DIR}/trunk/frontend/testbench.vhd
 
 # Compiles SDF file. Outputs file "${DEV_DIR}/SDF_FILE.sdf.X", which should be passed to ncelab
